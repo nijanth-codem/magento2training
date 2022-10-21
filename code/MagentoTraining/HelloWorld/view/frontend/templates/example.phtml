@@ -1,0 +1,8 @@
+<?php 
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Yireo\Example\ViewModel\Sample $sampleViewModel */
+
+$sampleViewModel = $block->getData('sample_view_model');
+?>
+
+<h1> <?= $sampleViewModel->getHelloWorld() ?> </h1>

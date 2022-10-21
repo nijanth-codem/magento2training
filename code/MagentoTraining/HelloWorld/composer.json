@@ -1,0 +1,20 @@
+{
+    "name": "magentotraining/magento2-helloworld",
+    "version": "0.0.1",
+    "description": "Hello world Test Module Description",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Yireo\\Example\\": ""
+        }
+    }
+}
