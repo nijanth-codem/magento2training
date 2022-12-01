@@ -1,0 +1,18 @@
+<?php
+/**
+ * Product view template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View
+ */
+?>
+<?php
+$product = $block->getProduct();
+$productPreOrderVal = $product->getIsPreOrder();
+if($productPreOrderVal) {
+    ?>
+    <div class="product attribute preorder" style="background-color: #F3F3F3">
+        <strong style="padding: 5px; border-radius: 2px">Pre Order</strong>
+    </div>
+    <?php
+}
+?>

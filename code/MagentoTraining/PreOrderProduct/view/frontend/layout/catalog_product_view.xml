@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="MagentoTraining_PreOrderProduct::css/mycss.css" />
+    </head>
+    <body>
+        <move element="product.info.newattribute" destination="product.info.stock.sku" after="-"/>
+        <referenceContainer name="content">
+            <container name="pre.order.product" htmlTag="div" htmlClass="pre-order-product" >
+                <block class="Magento\Catalog\Block\Product\View" name="product.info.newattribute" template="MagentoTraining_PreOrderProduct::preorderproduct.phtml" />
+            </container>
+        </referenceContainer>
+    </body>
+</page>

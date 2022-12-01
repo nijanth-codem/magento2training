@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Training_FreeShippingBar::css/shippingbar.css"/>
+    </head>
+    <body>
+        <move element="shipping_bar" destination="header.container" before='-' />
+        <referenceBlock name="shipbar">
+            <block class="Training\FreeShippingBar\Block\Cart\Sidebar" name="shipping_bar" template="Training_FreeShippingBar::cart/minicart.phtml" before="-" ifconfig="freeshippingbar/general/enable">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="minicart-addons" xsi:type="array">
+                                <item name="component" xsi:type="string">Training_FreeShippingBar/js/view/minicartaddons</item>
+                                <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">Training_FreeShippingBar/minicartaddons/content</item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

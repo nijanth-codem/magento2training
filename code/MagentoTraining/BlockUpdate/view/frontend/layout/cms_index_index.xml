@@ -4,9 +4,9 @@
     <referenceContainer name="header.container">
         <block template="MagentoTraining_BlockUpdate::test.phtml" >
         <arguments>
-        <argument name="view_model"
+          <argument name="view_model"
                   xsi:type="object">Aureatelabs\ModuleName\ViewModel\Custom</argument>
-        </arguments>
+          </arguments>
         </block>
      </referenceContainer>
   </body>

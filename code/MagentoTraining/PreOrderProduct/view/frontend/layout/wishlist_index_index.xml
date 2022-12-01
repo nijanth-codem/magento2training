@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="wishlist_sidebar" class="Magento\Wishlist\Block\Customer\Sidebar" template="MagentoTraining_PreOrderProduct::sidebar.phtml">
+        </referenceBlock>
+        <referenceBlock name="customer.wishlist.items" class="Magento\Wishlist\Block\Customer\Wishlist\Items" template="MagentoTraining_PreOrderProduct::item/list.phtml">
+        </referenceBlock>
+        <referenceBlock name="customer.wishlist.item.name" class="Magento\Wishlist\Block\Customer\Wishlist\Item\Column\Info" template="MagentoTraining_PreOrderProduct::item/column/name.phtml">
+        </referenceBlock>
+    </body>
+</page>

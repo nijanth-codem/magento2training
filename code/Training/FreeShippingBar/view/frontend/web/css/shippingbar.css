@@ -1,0 +1,10 @@
+div.shippingbar-block {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #1ABC9C;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 15px;
+}

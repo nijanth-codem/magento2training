@@ -1,0 +1,13 @@
+<h3>Customer Details:</h3>
+<?php
+$customersDetails = $this->getCustomerCollection();
+
+foreach($customersDetails as $customer)
+{
+    echo "Name: ". $customer->getName();
+    echo "<br>";
+    echo "Email: ". $customer->getEmail();
+    echo "<hr/>";
+}
+
+?> 

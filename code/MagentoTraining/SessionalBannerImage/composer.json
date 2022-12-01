@@ -1,0 +1,20 @@
+{
+  "name": "magentotraining/magento2-sessionalbannerimage",
+  "version": "0.0.1",
+  "description": "Custom Categories",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MagentoTraining\\SessionalBannerImage\\": ""
+    }
+  }
+}

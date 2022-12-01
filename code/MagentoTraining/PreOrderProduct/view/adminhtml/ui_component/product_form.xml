@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="stock_data">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">Custom Group</item>
+                <item name="provider" xsi:type="string">product</item>
+                <item name="dataScope" xsi:type="string">data.product</item>
+                <item name="sortOrder" xsi:type="number">2</item>
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="opened" xsi:type="boolean">false</item>
+                <item name="ns" xsi:type="string">product_form</item>
+            </item>
+        </argument>
+        <container name="testing_group">
+            <field name="is_pre_order">
+                <argument name="data" xsi:type="array">
+                    <item name="options" xsi:type="object">MagentoTraining\PreOrderProduct\Model\Config\Source\PreOrderAttr</item>
+                    <item name="config" xsi:type="array">
+                        <item name="label" xsi:type="string" translate="true">Pre Order</item>
+                        <item name="sortOrder" xsi:type="number">230</item>
+                        <item name="dataType" xsi:type="string">string</item>
+                        <item name="formElement" xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+        </container>
+    </fieldset>
+</form>
