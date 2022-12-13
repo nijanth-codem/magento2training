@@ -11,6 +11,23 @@
 
                                 <item name="steps" xsi:type="array">
                                     <item name="children" xsi:type="array">
+
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="before-form" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="preordercmsblock" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">MagentoTraining_PreOrderProduct/js/view/preorder/preordercmsblock</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+
                                         <item name="billing-step" xsi:type="array">
                                             <item name="children" xsi:type="array">
                                                 <item name="payment" xsi:type="array">

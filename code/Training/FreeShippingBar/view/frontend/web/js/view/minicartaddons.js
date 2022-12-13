@@ -22,7 +22,7 @@ define([
         getMessage: function () {
             subtotalAmount = Number(customerData.get('cart')().subtotalAmount);
             let message;
-            if(subtotalAmount == 0 || subtotalAmount == undefined) {
+            if(!subtotalAmount) {
                 message = "Free Shipping for order over $"+eligibleAmount;
             }
             else if (subtotalAmount < eligibleAmount && subtotalAmount > 0) {

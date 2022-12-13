@@ -8,4 +8,9 @@
         <plugin name="minicart-product-attribute" type="MagentoTraining\PreOrderProduct\Plugin\Checkout\CustomerData\DefaultItem" />
     </type>
     <preference for="Magento\Wishlist\CustomerData\Wishlist" type="MagentoTraining\PreOrderProduct\CustomerData\Wishlist" />
+
+    <type name="Magento\Swatches\Block\Product\Renderer\Configurable">
+        <plugin name="swatches-product-preorder-attribute" type="MagentoTraining\PreOrderProduct\Plugin\Swatches\Block\Product\Renderer\Configurable" />
+    </type>
+
 </config>

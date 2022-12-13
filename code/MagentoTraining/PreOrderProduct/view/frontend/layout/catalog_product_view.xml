@@ -10,5 +10,10 @@
                 <block class="Magento\Catalog\Block\Product\View" name="product.info.newattribute" template="MagentoTraining_PreOrderProduct::preorderproduct.phtml" />
             </container>
         </referenceContainer>
+
+        <move element="product.preorder.attribute" destination="product.info.options.wrapper" after="-"/>
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Product\View" name="product.preorder.attribute" template="MagentoTraining_PreOrderProduct::preorderattribute.phtml" />
+        </referenceContainer>
     </body>
 </page>

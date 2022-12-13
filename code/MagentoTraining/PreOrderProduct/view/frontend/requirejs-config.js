@@ -1,7 +1,9 @@
 var config = {
-    map: {
-        '*': {
-            'Magento_Checkout/template/minicart/item/default.html': 'MagentoTraining_PreOrderProduct/template/minicart/item/default.html'
+    config: {
+        mixins: {
+            'Magento_Swatches/js/swatch-renderer': {
+                'MagentoTraining_PreOrderProduct/js/model/swatch-renderer': true
+            }
         }
     }
 };
